@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>encontraMaiorParEimpar</title>
+</head>
+<body>
+    <h1>Função pra Encontrar Maior Par e Maior Impar</h1>
+    
+</body>
+</html>
+
+
+<script>
+// escreva uma função que encontre o maior número ímpar e o maior número par dentro de um array e retorne o maior par e maior impar.
+
+// 1. Imprima o array números
+// 2. Imprima os pares e os ímpares
+// 3. Imprima o maior par e o maior ímpar.
+
+function encontraMaiorParEimpar(numeros) { // array [4,2,6]
+
+    var pares = []
+    var impares = []
+
+    var parMaior = 0
+    var imparMaior = 0
+
+    for (var i = 0; i < numeros.length; i++) {
+        if (numeros[i] % 2 === 0) {
+            pares.push(numeros[i])
+        }
+        else {
+            impares.push(numeros[i])
+        }
+    }
+
+    for (var p = 0; p < pares.length; p++) {
+
+        if (pares[p] > parMaior) {
+            parMaior = pares[p]
+        }
+    }
+
+    for (var imp = 0; imp < impares.length; imp++)
+        if (impares[imp] > imparMaior) {
+            imparMaior = impares[imp]
+        }
+
+
+
+    // m é o segundo for que vai buscar o parMaior e o imparMaior 
+
+    alert('Na sua sequência de números: ' + '"' + numeros + '"' + '\n'
+        + 'São pares: ' + pares + '\n'
+        + 'São ímpares: ' + impares + '\n'
+        + 'O maior par é: ' + parMaior + '\n'
+        + 'E o maior ímpar é: ' + imparMaior + '.')
+
+
+
+}//numeros é um array
+encontraMaiorParEimpar([2, 4, 6, 8, 11, 13, 14])
+</script>
