@@ -20,47 +20,35 @@
 // 2. Imprima os pares e os ímpares
 // 3. Imprima o maior par e o maior ímpar.
 
-function encontraMaiorParEimpar(numeros) { // array [4,2,6]
+        function encontraMaiorParImpar (numeros) {
 
-    var pares = []
-    var impares = []
+        var pares = []
+        var impares = []
+        var maiorPar = 0;
+        var maiorImpar = 0;
 
-    var parMaior = 0
-    var imparMaior = 0
-
-    for (var i = 0; i < numeros.length; i++) {
-        if (numeros[i] % 2 === 0) {
-            pares.push(numeros[i])
+        for (var i = 0; i < numeros.length; i++) {
+            if (numeros[i] % 2 === 0) {
+                pares.push(numeros[i])
+            }
+            else {
+                impares.push(numeros[i])
+            }
         }
-        else {
-            impares.push(numeros[i])
+
+        for (m = 0; m < numeros.length; m++) {
+            if (numeros[m] > maiorPar && numeros[m] % 2 === 0) {
+                maiorPar = numeros[m]
+            }
+             else if (numeros[m] > maiorImpar && numeros[m] % 2 === 1) {
+                maiorImpar = numeros[m]
+            }
+            
         }
+        
+        console.log("Na sua sequência de números: " + numeros + "\n" + "Os pares são: " + pares + "\n" + "Os ímpares são: " + impares + "\n" + "Maior par: " + maiorPar + "\n" + "Maior ímpar: " + maiorImpar)
     }
-
-    for (var p = 0; p < pares.length; p++) {
-
-        if (pares[p] > parMaior) {
-            parMaior = pares[p]
-        }
-    }
-
-    for (var imp = 0; imp < impares.length; imp++)
-        if (impares[imp] > imparMaior) {
-            imparMaior = impares[imp]
-        }
+    encontraMaiorParImpar([2, 3, 45, 12, 6, 44, 777])
 
 
-
-    // m é o segundo for que vai buscar o parMaior e o imparMaior 
-
-    alert('Na sua sequência de números: ' + '"' + numeros + '"' + '\n'
-        + 'São pares: ' + pares + '\n'
-        + 'São ímpares: ' + impares + '\n'
-        + 'O maior par é: ' + parMaior + '\n'
-        + 'E o maior ímpar é: ' + imparMaior + '.')
-
-
-
-}//numeros é um array
-encontraMaiorParEimpar([2, 4, 6, 8, 11, 13, 14])
 </script>
