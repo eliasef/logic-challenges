@@ -6,8 +6,8 @@
 // OBESIDADE GRAU II: 35 a 39.9
 // OBESIDADE GRAU III: maior ou igual a 40
 
-// 1. Iprima o IMC + Classificação respectiva do mesmo
-// 2. Imprima o peso ideal através de ("Está entre (peso_ideal_min e peso ideal_maximo)")
+// 1. Iprima o IMC + Classificação respectiva do mesmo.
+// 2. Imprima o peso ideal.
 
 
 
