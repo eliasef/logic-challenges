@@ -1,2 +1,2 @@
-# funcoes-javascript
-Minhas funções preferidas de Javascript.
+# exercicios
+Exercícios feitos com o pessoal do Telegram!
