@@ -13,12 +13,10 @@ Imprima na tela a contagem regressiva, colocando cada número da contagem em uma
 
 function contagemBomba (numero) {
 
-var aparece = "KABUM"
-
     for (var i = numero; i >= 0; i--) {
         console.log(i)
         }
-       console.log(aparece)     
+       console.log("KABUM")     
 
 }
 contagemBomba(10)
