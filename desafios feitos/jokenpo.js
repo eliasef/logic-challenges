@@ -4,8 +4,6 @@ function jokenpo (acao) {
 
 if (acao === "pedra" || acao === "papel" || acao === "tesoura") {
 
-    let oponente = ""
-
     function randomiza (itens) { // array itens: [pedra,papel,tesoura]
     oponente = itens[Math.floor(Math.random() * itens.length)]
     }
@@ -26,4 +24,4 @@ if (acao === "pedra" || acao === "papel" || acao === "tesoura") {
         console.log("Ação inválida, digite novamente.")
     }
 }
-jokenpo("")
+jokenpo("pedra")
