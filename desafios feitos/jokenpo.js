@@ -5,7 +5,7 @@ function jokenpo (acao) {
 if (acao === "pedra" || acao === "papel" || acao === "tesoura") {
 
     function randomiza (itens) { // array itens: [pedra,papel,tesoura]
-    oponente = itens[Math.floor(Math.random() * itens.length)]
+    let oponente = itens[Math.floor(Math.random() * itens.length)]
     }
     randomiza(["pedra","papel","tesoura"])
 
