@@ -1,25 +1,25 @@
-function jokenpo (acao) {
+function jokenpo (jogador1) {
 
-if (acao === "pedra" || acao === "papel" || acao === "tesoura") {
+if (jogador1 === "pedra" || jogador1 === "papel" || jogador1 === "tesoura") {
 
-        let oponente = "";
+        let jogador2 = "";
 
         function randomiza (item) {
-        oponente = item[Math.floor(Math.random() * item.length)]
+        jogador2 = item[Math.floor(Math.random() * item.length)]
         }
         randomiza(["pedra","papel","tesoura"])
 
-            console.log (`Você escolheu: ${acao} \n` + `Seu oponente escolheu: ${oponente}`)
+            console.log (`Você escolheu: ${jogador1} \n` + `Seu jogador2 escolheu: ${jogador2}`)
 
-        if (acao === "pedra" && oponente === "tesoura" || acao === "papel" && oponente === "pedra" || acao === "tesoura" && oponente === "papel") {   
+        if (jogador1 === "pedra" && jogador2 === "tesoura" || jogador1 === "papel" && jogador2 === "pedra" || jogador1 === "tesoura" && jogador2 === "papel") {   
             console.log("Você ganhou!")               
-        } else if (acao === oponente) {
+        } else if (jogador1 === jogador2) {
             console.log("Empate!")
         } else {
             console.log("Você perdeu!")
         }                     
     }
-    if (acao === "") {
+    if (jogador1 === "") {
         console.log("Ação inválida, digite novamente.")
     }
 }
