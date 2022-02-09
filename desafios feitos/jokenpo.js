@@ -1,24 +1,29 @@
-/* Disputando o controle remoto da TV, dois irmãos, João e André decidiram quem ficaria com o controle jogando pedra, papel ou tesoura.
+// Programa que simule o Jokenpo! Basta escrever sua ação em letras minúsculas, chamando a função jokenpo.
 
-Cada jogador escolhe uma das opções para jogar, sendo que:
+function jokenpo (acao) {
 
-Perdra ganha de tesoura, mas perde de papel
-Papel ganha de pedra, mas perde de tesoura
-Tesoura ganha de papel, mas perde de pedra
-Caso ambos os jogadores joguem a mesma coisa, há um empate
-O seu objetivo é fazer um programa de computador que determine quem é o vencedor do jogo, ou informar se houve um empate */
+if (acao === "pedra" || acao === "papel" || acao === "tesoura") {
 
-function jokenpo (joao, andre) {
+    let oponente = ""
 
-    
-   
-    if (joao === "PEDRA" && andre === "TESOURA" || joao === "PAPEL" && andre === "PEDRA" || joao === "TESOURA" && andre === "PAPEL") {  // wins possíveis do joao
-        console.log("JOAO")
-    } else if (andre === "PEDRA" && joao === "TESOURA" || andre === "PAPEL" && joao === "PEDRA" || andre === "TESOURA" && joao === "PAPEL") { // wins possíveis do andre
-        console.log("ANDRE")
-    } else if (joao === andre) {
-        console.log("EMPATE")
+    function randomiza (itens) { // array itens: [pedra,papel,tesoura]
+    oponente = itens[Math.floor(Math.random() * itens.length)]
     }
+    randomiza(["pedra","papel","tesoura"])
 
-}   
-jokenpo ("PEDRA","PEDRA")
+    console.log("Você escolheu: " + acao + '\n' + "Seu oponente escolheu: " + oponente);
+
+    if (acao === "pedra" && oponente === "tesoura" || acao === "papel" && oponente === "pedra" || acao === "tesoura" && oponente === "papel") {   
+        console.log("Você ganhou!")               
+    } else if (acao === oponente) {
+        console.log("Empate!")
+    } else {
+        console.log("Você perdeu!")
+    }                     
+
+    }
+    if (acao === "") {
+        console.log("Ação inválida, digite novamente.")
+    }
+}
+jokenpo("")
