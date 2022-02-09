@@ -9,7 +9,7 @@ if (acao === "pedra" || acao === "papel" || acao === "tesoura") {
         }
         randomiza(["pedra","papel","tesoura"])
 
-            console.log ("Você escolheu: " + acao + '\n' + "Seu oponente escolheu: " + oponente)
+            console.log (`Você escolheu: ${acao} \n` + `Seu oponente escolheu: ${oponente}`)
 
         if (acao === "pedra" && oponente === "tesoura" || acao === "papel" && oponente === "pedra" || acao === "tesoura" && oponente === "papel") {   
             console.log("Você ganhou!")               
