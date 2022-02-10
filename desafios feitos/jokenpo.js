@@ -1,6 +1,6 @@
 // Programa que simula o Jokenpo! Basta escrever sua entrada sendo uma string com letras minúsculas, chamando a função jokenpo.
 // a entrada é jogador1, que deve receber a string pedra, papel ou tesoura.
-// a saída deve ser a string pedra, papel ou tesoura e é exibido se você ganhou ou perdeu da máquina (jogador2)
+// a saída deve ser APENAS a string pedra, papel ou tesoura.
 
 // O nome da função é jokenpoOffline pois você joga sozinho com a máquina.
 
