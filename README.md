@@ -8,4 +8,6 @@ Exercícios feitos para pessoas que estão aprendendo agora!! Entre em nosso gru
   - Caso o número seja dividido por 3 e por 5, imprima a string "FizzBuzz";
   - Para cada número que seja divísivel por 3, imprima "Fizz";
   - Para cadada número que seja divisível por 5, imprima "Buzz";
+  - Caso uma entrada não seja um número, imprima "Não é um número"
   - Caso o número não possa ser dividido por 3 nem por 5, imprima "Bug";
+  
