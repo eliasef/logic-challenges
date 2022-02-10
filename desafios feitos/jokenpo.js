@@ -1,4 +1,7 @@
-function jokenpo (jogador1) {
+// Programa que simula o Jokenpo! Basta escrever sua entrada sendo uma string com letras minúsculas, chamando a função jokenpo.
+// O nome da função é jokenpoOffline pois você joga sozinho com a máquina.
+
+function jokenpoOffline (jogador1) {
 
 if (jogador1 === "pedra" || jogador1 === "papel" || jogador1 === "tesoura") {
 
@@ -24,4 +27,4 @@ if (jogador1 === "pedra" || jogador1 === "papel" || jogador1 === "tesoura") {
     }
 }
 
-jokenpo("pedra")
+jokenpoOffline("pedra")
