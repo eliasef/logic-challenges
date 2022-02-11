@@ -1,25 +1,36 @@
-/* Você está trabalhando numa empresa que desenvolveu um aplicativo que cria filtros para redes sociais. Neste aplicativo, para aplicar o filtro adequadamente, é necessário identificar se a foto foi tirada no modo retrato, paisagem, ou se a foto é quadrada.
+// Crie uma função chamada foto que receba na entrada dois parâmetros, largura e altura. E identifique se a foto foi tirada no modo retrato, paisagem ou quadrado. 
+/* 
+1. Imprima RETRATO caso a altura seja maior que a largura.
+2. Imprima PAISAGEM caso a largura seja maior que a altura. 
+3. Imprima QUADRADO caso a largura e altura sejam iguais.
+4. Para cada condição acima, imprima uma matriz de asteriscos respectiva a cada condição.
 
-Você ficou com a tarefa de desenvolver essa funcionalidade.
+Ex: Quando imprimir RETRATO, também imprima um retângulo de asteriscos, e etc. */
 
-Input Format
-
-A entrada será sempre composta de duas variáveis largurae altura que serão números inteiros e positivos.
-
-Output Format
-
-Imprima na tela RETRATO caso a altura seja maior que a largura
-Imprima na tela PAISAGEM caso a largura seja maior que a altura
-Imprima na tela QUADRADA caso a largura e altura sejam iguais */
-
-function foto(largura, altura) {
-    //seu codigo aqui
+function foto (largura, altura) {
+    
     if (altura > largura) {
-        console.log("RETRADO")
+        quadradoAsterisco(largura, altura)
+        console.log(`Foto é: RETRATO`);
     } else if (largura > altura) {
-        console.log("PAISAGEM")
+        quadradoAsterisco(largura, altura)
+        console.log(`Foto é: PAISAGEM`);
     } else if (largura === altura) {
-        console.log("QUADRADA")
+        quadradoAsterisco(largura, altura)
+        console.log(`Foto é: QUADRADA`);
     }
-  }
-  foto(8,8)
+}
+
+function quadradoAsterisco (largura, altura) {
+
+    for (let i = 0; i < altura; i++) {
+        let linhaDeAsteriscos = "";
+
+        for (let c = 0; c < largura; c++) {
+            linhaDeAsteriscos += "*  "
+        }
+        console.log(linhaDeAsteriscos)
+    }
+    
+}
+foto(6,6)
