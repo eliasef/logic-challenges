@@ -18,7 +18,11 @@ if (jogador1 === "pedra" || jogador1 === "papel" || jogador1 === "tesoura") {
 
             console.log (`Você escolheu: ${jogador1} \n` + `Seu oponente escolheu: ${jogador2}`)
 
-        if (jogador1 === "pedra" && jogador2 === "tesoura" || jogador1 === "papel" && jogador2 === "pedra" || jogador1 === "tesoura" && jogador2 === "papel") {   
+    const PEDRA_GANHA = jogador1 === "pedra" && jogador2 === "tesoura"
+    const PAPEL_GANHA = jogador1 === "papel" && jogador2 === "pedra"
+    const TESOURA_GANHA = jogador1 === "tesoura" && jogador2 === "papel"
+
+        if (PEDRA_GANHA === true || PAPEL_GANHA === true || TESOURA_GANHA === true) {   
             console.log("Você ganhou!")               
         } else if (jogador1 === jogador2) {
             console.log("Empate!")
