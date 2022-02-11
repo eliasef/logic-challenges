@@ -11,9 +11,10 @@ function jogoDosTres (numero) {
     let num3 = Math.floor(Math.random() * numero + 1)
     console.log("Número um é: " + num3)
 
-    if(numero === num1 && numero === num2 && numero === num3) {
+    if (numero === num1 && numero === num2 && numero === num3) {
         console.log("Você ganhou!")
-    }
-    
+    }   else {
+        console.log("Você perdeu!")
+    }      
 }
 jogoDosTres(3)
