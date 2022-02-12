@@ -7,30 +7,29 @@
 
 Ex: Quando imprimir RETRATO, também imprima um retângulo de asteriscos, e etc. */
 
-function foto (largura, altura) {
-    
-    if (altura > largura) {
-        quadradoAsterisco(largura, altura)
-        console.log(`Foto é: RETRATO`);
-    } else if (largura > altura) {
-        quadradoAsterisco(largura, altura)
-        console.log(`Foto é: PAISAGEM`);
-    } else if (largura === altura) {
-        quadradoAsterisco(largura, altura)
-        console.log(`Foto é: QUADRADA`);
-    }
-}
-
-function quadradoAsterisco (largura, altura) {
-
-    for (let i = 0; i < altura; i++) {
+function asteriscoVolatil (altura, largura) {
+    for (let linha = 0; linha < altura; linha++) {
         let linhaDeAsteriscos = "";
-
-        for (let c = 0; c < largura; c++) {
+        
+        for (let coluna = 0; coluna < largura; coluna ++) {
             linhaDeAsteriscos += "*  "
         }
         console.log(linhaDeAsteriscos)
     }
-    
+}           
+function foto (altura, largura) {
+    if (altura > largura) {
+        asteriscoVolatil(altura, largura);
+        console.log('foto modo: RETRATO');
+
+    } else if (largura > altura) {
+        asteriscoVolatil(altura, largura);
+        console.log('foto modo: PAISAGEM');
+
+    } else if (altura === largura) {
+        asteriscoVolatil(altura, largura);
+        console.log('foto modo: QUADRADA');
+
+    }
 }
-foto(6,6)
+foto(3,6)
