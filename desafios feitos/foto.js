@@ -29,7 +29,6 @@ function foto (altura, largura) {
     } else if (altura === largura) {
         asteriscoVolatil(altura, largura);
         console.log('foto modo: QUADRADA');
-
     }
 }
 foto(3,6)
