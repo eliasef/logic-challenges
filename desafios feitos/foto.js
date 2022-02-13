@@ -12,20 +12,18 @@ function asteriscoVolatil (altura, largura) {
         let linhaDeAsteriscos = "";
         
         for (let coluna = 0; coluna < largura; coluna ++) {
-            linhaDeAsteriscos += "*  "
+            linhaDeAsteriscos += "*  ";
         }
-        console.log(linhaDeAsteriscos)
+        console.log(linhaDeAsteriscos);
     }
 }           
 function foto (altura, largura) {
     if (altura > largura) {
         asteriscoVolatil(altura, largura);
         console.log('foto modo: RETRATO');
-
     } else if (largura > altura) {
         asteriscoVolatil(altura, largura);
         console.log('foto modo: PAISAGEM');
-
     } else if (altura === largura) {
         asteriscoVolatil(altura, largura);
         console.log('foto modo: QUADRADA');
