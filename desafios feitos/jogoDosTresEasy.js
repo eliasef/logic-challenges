@@ -20,10 +20,10 @@ function jogoDosTresEasy () {
     console.log("Número um é: " + num1)
 
     let num2 = Math.floor(Math.random() * entrada + 1)
-    console.log("Número um é: " + num2)
+    console.log("Número dois é: " + num2)
 
     let num3 = Math.floor(Math.random() * entrada + 1)
-    console.log("Número um é: " + num3)
+    console.log("Número três é: " + num3)
 
     let soma = (num1 + num2 + num3) / 3
 
