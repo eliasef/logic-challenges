@@ -1,7 +1,7 @@
 # Turma - Pré-Trybe
 ## Desafios para treinos
 
-Exercícios feitos para pessoas que estão aprendendo agora!! Entre em nosso grupo no [Telegram](https://t.me/+tMTrMn76W2FiMDdh) e no [Discord](https://discord.gg/eVWztcRE?event=939644290609602590)!
+Exercícios feitos para pessoas que estão aprendendo agora!! Entre em nosso grupo no [Telegram](https://t.me/+tMTrMn76W2FiMDdh) e no [Discord](https://discord.gg/DbsyYhTbJh)!
 
 ## Desafio extra:
 ### Crie uma função chamada fizzBuzz que receba uma array de números e retorne uma array da seguinte forma:
