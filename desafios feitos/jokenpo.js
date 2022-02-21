@@ -19,7 +19,7 @@ if (jogador1 === "pedra" || jogador1 === "papel" || jogador1 === "tesoura") {
     const PAPEL_GANHA = jogador1 === "papel" && jogador2 === "pedra"
     const TESOURA_GANHA = jogador1 === "tesoura" && jogador2 === "papel"
 
-        if (PEDRA_GANHA === true || PAPEL_GANHA === true || TESOURA_GANHA === true) {   
+        if (PEDRA_GANHA === true || PAPEL_GANHA === true || TESOURA_GANHA === true) {   // aq escrevemos as condições de vitória para o jogador 1
             console.log("Você ganhou!")               
         } else if (jogador1 === jogador2) {
             console.log("Empate!")
