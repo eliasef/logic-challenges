@@ -13,7 +13,7 @@ if (jogador1 === "pedra" || jogador1 === "papel" || jogador1 === "tesoura") {
         }
         randomiza(["pedra","papel","tesoura"])
 
-            console.log (`Você escolheu: ${jogador1} \n` + `Seu oponente escolheu: ${jogador2}`)
+            console.log (`Você escolheu: ${jogador1} \nSeu oponente escolheu: ${jogador2}`)
 
     const PEDRA_GANHA = jogador1 === "pedra" && jogador2 === "tesoura"
     const PAPEL_GANHA = jogador1 === "papel" && jogador2 === "pedra"
