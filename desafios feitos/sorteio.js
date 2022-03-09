@@ -10,6 +10,3 @@ function sorteio (item) {
     return itemSorteado;
 }
 console.log(sorteio(["DC","Marvel","Sonic","Batman"]))
-
-
-// NO MATH.ROUND SE PEGAR EXMP 0,7 * 4 #QUE É MEU LENGTH#, DÁ 3,6, E O ROUND VAI APROXIMAR PARA 4, QUE É UMA POSIÇÃO INEXISTENTE!!!!!!!!1
