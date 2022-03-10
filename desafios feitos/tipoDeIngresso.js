@@ -9,7 +9,6 @@ function tipoDeIngresso (informacoes) {
     } else {
         console.log('Acesso negado!')
     }
-
 }
 
 tipoDeIngresso({
