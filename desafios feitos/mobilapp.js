@@ -2,7 +2,7 @@
 
 A lógica é a seguinte:
 
-Caso a viagem seja muito curta, ou seja, dure menos de 05 minutos, a corrida custará 6 reais, indepententemente da distância percorrida.
+Caso a viagem seja muito curta, ou seja, dure menos de 05 minutos, a corrida custará 6 reais, independentemente da distância percorrida.
 
 Caso a viagem seja média, ou seja, dure entre 05 minutos e uma hora, a viagem custará 1 real por minuto mais 50 centavos por quilômetro percorrido.
 
@@ -38,4 +38,4 @@ function mobilapp (tempo, distancia) {
     }
 console.log(`Preço da viagem: R$ ${preco}`) // preco da corrida em centavos
 }
-mobilapp(65,70)
+mobilapp(40,54)
