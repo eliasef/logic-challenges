@@ -29,7 +29,7 @@ function mobilapp (tempo, distancia) {
         preco = 6;
     } else if (tempo >= 5 && tempo <= 60) { // VIAGEM MÉDIA
         preco = (1 * tempo) + 0.5 * distancia
-    } else if (tempo > 60) {
+    } else if (tempo > 60) { // VIAGEM LONGA
         if (distancia < 100) {
             preco = 2 * distancia;
         } else if (distancia > 100) {
