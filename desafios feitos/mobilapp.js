@@ -36,6 +36,6 @@ function mobilapp (tempo, distancia) {
             preco = 1.5 * distancia
         }
     }
-console.log(`Preço da viagem: R$ ${preco}`) // preco da corrida em centavos
+console.log(`Preço da viagem: R$ ${preco}`)
 }
 mobilapp(40,54)
